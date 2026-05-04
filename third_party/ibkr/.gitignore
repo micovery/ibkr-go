@@ -1,0 +1,6 @@
+# IBKR C++ API source — NOT redistributable.
+# Download from: https://interactivebrokers.github.io/
+# Extract here so that IBJts/ is a direct child of this directory.
+*
+!.gitignore
+!README.md
