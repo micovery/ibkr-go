@@ -181,4 +181,11 @@ type IBKRClient interface {
 
 	// ReqOpenOrders requests all open orders for this clientId.
 	ReqOpenOrders() ([]OpenOrder, error)
+
+	// ── Order ID Management ──
+
+	// NextOrderID returns the next valid order ID and atomically increments
+	// the internal counter. Thread-safe. Used by the session manager before
+	// each PlaceOrder call.
+	NextOrderID() int
 }
